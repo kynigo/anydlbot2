@@ -105,5 +105,6 @@ async def help_user(bot, update):
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ Join Updates Channel ⭕️", url="https://t.me/DevAXD")]]),
-   )
+       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 1", url="https://t.me/DevAXD")], [InlineKeyboardButton(text=" 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 2", url="https://t.me/world_wide_movies")],
+                                                    [InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 3 ", url="https://t.me/wwm_seriess")],[InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 4 ", url="https://t.me/UnitedMallus")],[InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 5 ", url="https://t.me/WWM_support")]]
+            )
