@@ -22,8 +22,8 @@ async def ForceSub(bot: Client, cmd: Message):
         await bot.send_message(
             chat_id=cmd.from_user.id,
             text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 1", url="https://t.me/DevAXD")], [InlineKeyboardButton(text=" 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 2", url="https://t.me/world_wide_movies"),
-                                                    InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 3 ", url="https://t.me/sIogan_98")]]
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 1", url="https://t.me/DevAXD")], [InlineKeyboardButton(text=" 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 2", url="https://t.me/world_wide_movies")],
+                                                    [InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 3 ", url="https://t.me/wwm_seriess")],[InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 4 ", url="https://t.me/UnitedMallus")],[InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 5 ", url="https://t.me/WWM_support")]]
             ),
             parse_mode="markdown"
         )
@@ -31,7 +31,7 @@ async def ForceSub(bot: Client, cmd: Message):
     except Exception:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).",
+            text="Something went Wrong. Contact my Dev [Support ](https://t.me/SIogan_98).",
             parse_mode="markdown",
             disable_web_page_preview=True
         )
