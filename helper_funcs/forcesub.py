@@ -22,8 +22,12 @@ async def ForceSub(bot: Client, cmd: Message):
         await bot.send_message(
             chat_id=cmd.from_user.id,
             text="**Please Join My Updates Channel to use this Bot!**\n\nDue to Overload, Only Channel Subscribers can use the Bot!",
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 1", url="https://t.me/DevAXD")], [InlineKeyboardButton(text=" 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 2", url="https://t.me/world_wide_movies")],
-                                                    [InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 3 ", url="https://t.me/wwm_seriess")],[InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 4 ", url="https://t.me/UnitedMallus")],[InlineKeyboardButton(text="𝐂𝐇𝐀𝐍𝐍𝐄𝐋 5 ", url="https://t.me/WWM_support")]]
+           reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("🤖 Join Updates Channel", url="https://t.me/world_wide_movies")
+                    ]
+                ]
             ),
             parse_mode="markdown"
         )
