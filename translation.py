@@ -1,73 +1,53 @@
 class Translation(object):
-    START_TEXT = """Hey! This is a simple Telegram All-In-One Bot that has so many function. Click /help button to Know How To Use Me.\n Made with ❤ By @TeleRoidGroup"""
-    RENAME_403_ERR = "<b>Sorry. You Are Not Permitted To Rename This File.\nAsk In [Support Group](https://t.me/TeleRoid14)</b>"
-    ABS_TEXT = " <b>Please Don't Be Selfish.</b>"
-    UPGRADE_TEXT = "<b>This Bot Is Free To Use If U R My  Friend......\n\n@TheTeleRoid</b>"
-    FORMAT_SELECTION = "<b>Select The Desired Format:</b> "
-    SET_CUSTOM_USERNAME_PASSWORD = """<b>If You Want To Download Premium Videos, Provide In The Following Format:
+    START_TEXT = """<b>ഹേയ്! ഞാൻ @world_wide_movies എന്ന ചാനലിന്റെ യന്ത്രമനുഷ്യൻ .എന്നെ എങ്ങനെ ഉപയോഗിക്കണമെന്ന് അറിയാൻ /help ക്ലിക്ക് ചെയ്യുക</b>.\n """
+    RENAME_403_ERR = "<b>ക്ഷമിക്കണം. ഈ ഫയലിന്റെ പേരുമാറ്റാൻ നിങ്ങൾക്ക് അനുവാദമില്ല.</b>"
+    ABS_TEXT = " <b>ദയവായി സ്വാർത്ഥനാകരുത്.</b>"
+    UPGRADE_TEXT = "<b>നിങ്ങൾ എന്റെ സുഹൃത്താണെങ്കിൽ ഈ ബോട്ട് ഉപയോഗിക്കാൻ സൌജന്യമാണ്......</b>"
+    FORMAT_SELECTION = "<b>ആവശ്യമുള്ള ഫോർമാറ്റ് തിരഞ്ഞെടുക്കുക:</b> "
+    SET_CUSTOM_USERNAME_PASSWORD = """<b>നിങ്ങൾക്ക് പ്രീമിയം വീഡിയോകൾ ഡൗൺലോഡ് ചെയ്യണമെങ്കിൽ, ഇനിപ്പറയുന്ന ഫോർമാറ്റിൽ നൽകുക:
 URL | filename | username | password</b>"""
-    NOYES_URL = "<b>This Is Dam Slow Link Bro! I Wont Waste My Time On This. Get Me A Fast Link</b>"
-    DOWNLOAD_START = "<b>Downloading Your Files.....📥</b>"
-    UPLOAD_START = "<b>Uploading Your Files.....📤</b>"
-    RCHD_BOT_API_LIMIT ="<b>Size Greater Than Maximum Allowed Size. Neverthless, Trying To Upload.</b>"
-    RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\n<b>Sorry. But, I Cannot Upload Files Greater Than 2GB Due To Telegram API Limitations.</b>"
-    AFTER_SUCCESSFUL_UPLOAD_MSG = "<b>File Uploaded Successfully</b>"
+    NOYES_URL = "<b>ഇതൊരു സാവധാനത്തിലുള്ള ലിങ്കാണ് ബ്രോ! ഞാൻ ഇതിനുവേണ്ടി എന്റെ സമയം പാഴാക്കുകയില്ല. എനിക്ക് ഒരു ഫാസ്റ്റ് ലിങ്ക് തരൂ<</b>"
+    DOWNLOAD_START = "<b>നിങ്ങളുടെ ഫയലുകൾ ഡൗൺലോഡ് ചെയ്യുന്നു.....📥</b>"
+    UPLOAD_START = "<b>നിങ്ങളുടെ ഫയലുകൾ അപ്‌ലോഡ് ചെയ്യുന്നു.....📤📤</b>"
+    RCHD_BOT_API_LIMIT ="<b>അനുവദനീയമായ പരമാവധി വലുപ്പത്തേക്കാൾ വലുത്. എന്നിരുന്നാലും, അപ്‌ലോഡ് ചെയ്യാൻ ശ്രമിക്കുന്നു.</b>"
+    RCHD_TG_API_LIMIT = "ഡൗൺലോഡ് ചെയ്തു {} സെക്കന്റ് കൊണ്ട്.\nDetected File Size: {}\n<b>ക്ഷമിക്കണം. പക്ഷേ, ടെലിഗ്രാം API പരിമിതികൾ കാരണം എനിക്ക് 2GB-യിൽ കൂടുതൽ ഫയലുകൾ അപ്‌ലോഡ് ചെയ്യാൻ കഴിയില്ല.</b>"
+    AFTER_SUCCESSFUL_UPLOAD_MSG = "<b>ഫയൽ അപ്‌ലോഡ് ചെയ്‌തു</b>"
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds. \nUploaded in {} seconds."
-    NOT_AUTH_USER_TEXT = "You Are Not Authorise To Do This. This Is Only <b>Admin</b> Command"
-    NOT_AUTH_USER_TEXT_FILE_SIZE = "Detected File Size: {}. Free Users can only upload: {}\nPlease /upgrade your subscription."
-    SAVED_CUSTOM_THUMB_NAIL = "<b>Custom video / file thumbnail saved. This image will be used in the video / file.</b>"
-    DEL_ETED_CUSTOM_THUMB_NAIL = "✅ <b>Custom thumbnail cleared succesfully."
-    FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media Cleared Succesfully.</b>"
-    SAVED_RECVD_DOC_FILE = "<b>Document Downloaded Successfully.</b>"
-    CUSTOM_CAPTION_UL_FILE = " <b>Bot Created By \n   👉**@TheTeleRoid**</b>"
-    NO_CUSTOM_THUMB_NAIL_FOUND = "<b>No Custom ThumbNail Found .</b>"
-    NO_VOID_FORMAT_FOUND = "Can You Check The Url? <b>I Am Unable To Detect Video Format From UrL.</b> If You Think This Could Be A Bug Please Report On https://t.me/TeleRoid14"
+    NOT_AUTH_USER_TEXT = "ഇത് ചെയ്യാൻ നിങ്ങൾക്ക് അധികാരമില്ല. ഇത് <b>അഡ്മിൻ</b> വേണ്ടി മാത്രം"
+    NOT_AUTH_USER_TEXT_FILE_SIZE = "ഫയൽ വലുപ്പം കണ്ടെത്തി: {}. സൗജന്യ ഉപയോക്താക്കൾക്ക് ഈ ഫയൽ വലുപ്പം മാത്രമേ അപ്‌ലോഡ് ചെയ്യാനാകൂ: {}\nനിങ്ങളുടെ സബ്‌സ്‌ക്രിപ്‌ഷൻ /upgrade ചെയ്യുക."
+    SAVED_CUSTOM_THUMB_NAIL = "<b>ഇഷ്‌ടാനുസൃത വീഡിയോ / ഫയൽ ലഘുചിത്രം എടുത്ത് വെച്ചു . ഈ ചിത്രം വീഡിയോ / ഫയലിൽ ഉപയോഗിക്കും.</b>"
+    DEL_ETED_CUSTOM_THUMB_NAIL = "✅ <b>ഇഷ്‌ടാനുസൃത ലഘുചിത്രം വിജയകരമായി മായ്‌ച്ചു."
+    FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ മീഡിയ വിജയകരമായി മായ്ച്ചു.</b>"
+    SAVED_RECVD_DOC_FILE = "<b>പ്രമാണം ഡൗൺലോഡ് ചെയ്തു.</b>"
+    CUSTOM_CAPTION_UL_FILE = " <b>ബോട്ട് സൃഷ്ടിച്ചത് \n   👉**@DevAXD**</b>"
+    NO_CUSTOM_THUMB_NAIL_FOUND = "<b>ഇഷ്‌ടാനുസൃത ലഘുചിത്രമൊന്നും കണ്ടെത്തിയില്ല .</b>"
+    NO_VOID_FORMAT_FOUND = "നിങ്ങൾക്ക് ലിങ്ക്  പരിശോധിക്കാമോ? <b>URL-ൽ നിന്ന് വീഡിയോ ഫോർമാറ്റ് കണ്ടെത്താൻ എനിക്ക് കഴിയുന്നില്ല."
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
-    CURENT_PLAN_DETAILS = """Current plan details
+    CURENT_PLAN_DETAILS = """നിലവിലെ പ്ലാൻ വിശദാംശങ്ങൾ
 -----------------------------
-👤Telegram ID: <code>{}</code>
-
-📝Plan name: 75GB Per Month
-
-🚸Expires on: 10/12/2021
-
-😎If You need Private Bot Please Ch3ck @PayForBotz.
+➪ടെലിഗ്രാം ഐഡി: <code>{}</code>
+➪പ്ലാൻ പേര്: 75GB Per Month
+➪കാലഹരണപ്പെടുന്നത്: 1/12/2023
 -----------------------------"""
-    HELP_USER = """<b>There Are Multiple Things I Can Do:</b>\n\n <b>All Supported Video Formats of [YTDLp]</b>
-
-☞  <b>Upload as file from any Direct link</b>
-
-☞  <b>Convert To Video of TG Media.\nReply /converttovideo to Any Media</b>
-
-☞  <b>ReName Telegram files, with custom thumbnail support.\nReply /rename To File</b>
-
-☞  <b>Get High Speed Direct Download Link Of Any Telegram File.\nReply /getlink To File</b>
+    HELP_USER = """<b>എനിക്ക് ചെയ്യാൻ കഴിയുന്ന ഒന്നിലധികം കാര്യങ്ങൾ ഉണ്ട്:</b>\n\n
+    
+    <b>[YTDLp] പിന്തുണയ്ക്കുന്ന എല്ലാ വീഡിയോ ഫോർമാറ്റുകളും</b>
+➪  <b>ഏതെങ്കിലും നേരിട്ടുള്ള ലിങ്കിൽ നിന്ന് ഫയലായി അപ്‌ലോഡ് ചെയ്യുക</b>
+➪  <b>ഇഷ്‌ടാനുസൃത ലഘുചിത്ര പിന്തുണയോടെ ടെലിഗ്രാം ഫയലുകൾ പുനർനാമകരണം ചെയ്യുക.\n /rename ഫയലിനു മറുപടിയായി നൽകുക </b>
+➪  <b>ഏതൊരു ടെലിഗ്രാം ഫയലിന്റെയും ഹൈ സ്പീഡ് ഡയറക്ട് ഡൗൺലോഡ് ലിങ്ക് നേടുക.\nReply /getlink ഫയലിനു മറുപടിയായി നൽകുക</b>
 -----------------------------
 
-Send /me To Know Your Current Plan Details"""
-    REPLY_TO_DOC_GET_LINK = "<b>Reply to a Telegram media to get High Speed Direct Download Link.</b>"
-    REPLY_TO_DOC_FOR_C2V = "<b>Reply to a Telegram Media To Convert.\n@TheTeleRoid</b>"
-    REPLY_TO_DOC_FOR_SCSS = "<b>Reply to a Telegram Media To Get Screenshots.\n@TheTeleRoid</b>"
-    SOURCE = """<b>Hello! You Want to Know More About Me</b>
+നിങ്ങളുടെ നിലവിലെ പ്ലാൻ വിശദാംശങ്ങൾ അറിയാൻ /m അയയ്ക്കുക"""
+    REPLY_TO_DOC_GET_LINK = "<b>ഏതൊരു ടെലിഗ്രാം ഫയലിന്റെയും ഹൈ സ്പീഡ് ഡയറക്ട് ഡൗൺലോഡ് ലിങ്ക് നേടുക.</b>"
+    REPLY_TO_DOC_FOR_C2V = "<b>പരിവർത്തനം ചെയ്യാൻ ഒരു ടെലിഗ്രാം മീഡിയയ്ക്ക് മറുപടി നൽകുക.</b>"
+    REPLY_TO_DOC_FOR_SCSS = "<b>സ്ക്രീൻഷോട്ടുകൾ ലഭിക്കാൻ ഒരു ടെലിഗ്രാം മീഡിയയ്ക്ക് മറുപടി നൽകുക.</b>"
+    SOURCE = """<b>ഹലോ! നിങ്ങൾക്ക് എന്നെ കുറിച്ച് കൂടുതൽ അറിയണോ?</b>
 
-<b>🤖 My Name : <i>TeleRoid AnyDLBot</i></b>
-
-<b>👨‍💻 Creator : <a href='https://telegram.dog/TheTeleRoid'>This Person</a></b>
-
-<b>🧛‍♂️ Credits : Everyone In This Journey</b>
-
-<b>📝 Language : Python 3.9</b>
-
-<b>📚 Library : Pyrogram Asyncio</b>
-
-<b>🗂 Cloned From : AnyDLBot [Spechide]</b>
-
-<b>🧬 Source Code :  <a href="https://github.com/PredatorHackerzZ/AnyDLBot-2">𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲</a></b>
-
-<b>📡 Server : <a href='https.heroku.com'>Heroku</a></b>
-
-<b>💡 Build Status : Beta v1</b>"""
-    REPLY_TO_DOC_FOR_RENAME_FILE = "<b>Reply to a Telegram Media To /rename With Custom Thumbnail Support.Or Ask In Support Group.</b>"
+<b>➪ ചാനൽ</b> : <a href="https://t.me/DevAXD">@DevAXD</a>
+<b>➪ ഭാഷ :</b> <a href="https://www.python.org/">Python 3.10.5</a>
+<b>➪ ശിൽപി :</b> <a href="https://t.me/slogan_98">@slogan_98</a>
+<b>➪ പദവി : ചിട്ടി v1</b>"""
+    REPLY_TO_DOC_FOR_RENAME_FILE = "<b>ഒരു ടെലിഗ്രാം മീഡിയയ്ക്ക് മറുപടി നൽകുക /rename ഇഷ്‌ടാനുസൃത ലഘുചിത്ര പിന്തുണയോടെ.</b>"
     AFTER_GET_DL_LINK = "Direct Link <a href='{}'>Generated</a> valid for {} days."
     FF_MPEG_RO_BOT_RE_SURRECT_ED = """Syntax: /trim HH:MM:SS [HH:MM:SS]"""
     FF_MPEG_RO_BOT_STEP_TWO_TO_ONE = "<b>First send /downloadmedia To Any Media So That It Can Be Downloaded To My Local. \nSend /Storageinfo To Know The Media, That Is Currently Downloaded.</b>"
